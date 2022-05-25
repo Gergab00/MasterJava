@@ -53,12 +53,14 @@ En Java, todas las variables deben declararse antes de que puedan ser utilizadas
 
 Java es un lenguaje de tipado estático. Es decir, se define el tipo de dato de la variable a la hora de definir esta. Es por ello que todas las variables tendrán un tipo de dato asignado.
 
--_byte_ Representa un tipo de dato de 8 bits con signo. De tal manera que puede almacenar los valores numéricos de -128 a 127
--_short_ Representa un tipo de dato de 16 bits con signo. De esta manera almacena valores numéricos de -32.768 a 32.767.
--_int_ Es un tipo de dato de 32 bits con signo para almacenar valores numéricos. Cuyo valor mínimo es -231 y el valor máximo 231-1.
--_long_ Es un tipo de dato de 64 bits con signo que almacena valores numéricos entre -263 a 263-1
--_float_ Es un tipo dato para almacenar números en coma flotante con precisión simple de 32 bits.
--_double_ Es un tipo de dato para almacenar números en coma flotante con doble precisión de 64 bits.
--_boolean_ Sirve para definir tipos de datos booleanos. Es decir, aquellos que tienen un valor de true o false. Ocupa 1 bit de información.
--_char_ Es un tipo de datos que representa a un carácter Unicode sencillo de 16 bits.
--_var_ Se introdujo en Java 10. La inferencia de tipos se utiliza en la palabra clave var en la que detecta automáticamente el tipo de datos de una variable en función del contexto circundante.
+- _byte_ Representa un tipo de dato de 8 bits con signo. De tal manera que puede almacenar los valores numéricos de -128 a 127
+- _short_ Representa un tipo de dato de 16 bits con signo. De esta manera almacena valores numéricos de -32.768 a 32.767.
+- _int_ Es un tipo de dato de 32 bits con signo para almacenar valores numéricos. Cuyo valor mínimo es -231 y el valor máximo 231-1.
+- _long_ Es un tipo de dato de 64 bits con signo que almacena valores numéricos entre -263 a 263-1
+- _float_ Es un tipo dato para almacenar números en coma flotante con precisión simple de 32 bits.
+- _double_ Es un tipo de dato para almacenar números en coma flotante con doble precisión de 64 bits.
+- _boolean_ Sirve para definir tipos de datos booleanos. Es decir, aquellos que tienen un valor de true o false. Ocupa 1 bit de información.
+- _char_ Es un tipo de datos que representa a un carácter Unicode sencillo de 16 bits.
+- _var_ Se introdujo en Java 10. La inferencia de tipos se utiliza en la palabra clave var en la que detecta automáticamente el tipo de datos de una variable en función del contexto circundante.
+
+___Nota:___ En los números tipo float y double se puede usar la letra e para notación científica, donde e va seguido de un número y es el número de espacios que se recorre el punto a la derecha, pro ejemplo 2.12e3f es igual a 2120.0, si se usa un número negativo después de la e, el punto se recorre a la izquierda, por ejemplo 1.5e-10f = 0.00000000015f
