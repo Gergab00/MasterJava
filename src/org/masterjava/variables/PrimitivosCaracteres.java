@@ -1,3 +1,5 @@
+package org.masterjava.variables;
+
 public class PrimitivosCaracteres {
 
     public static void main(String[] args) {

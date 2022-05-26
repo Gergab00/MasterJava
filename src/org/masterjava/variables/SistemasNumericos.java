@@ -1,3 +1,5 @@
+package org.masterjava.variables;
+
 import javax.swing.*;
 
 public class SistemasNumericos {

@@ -67,3 +67,4 @@ ___Nota:___ En los números tipo float y double se puede usar la letra e para no
 
 ## Otros links
 ![Entrada de datos. Lectura de datos por teclado en Java. Scanner y BufferedReader](/EntradasDeDatos.md)
+![Anotaciones](/Anotaciones.md)

@@ -1,3 +1,5 @@
+package org.masterjava.variables;
+
 public class PrimitivosEnteros {
     public static void main(String[] args) {
 

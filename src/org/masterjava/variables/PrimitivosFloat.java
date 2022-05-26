@@ -1,3 +1,5 @@
+package org.masterjava.variables;
+
 import java.util.Scanner;
 
 public class PrimitivosFloat {
