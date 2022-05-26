@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class PrimitivosFloat {
     public static void main(String[] args) {
         
@@ -14,6 +16,9 @@ public class PrimitivosFloat {
         System.out.println("Tipo Double corresponde en bites a: " + Double.SIZE);
         System.out.println("Valor máximo de un Double: " + Double.MAX_VALUE);
         System.out.println("Valor mínimo de un Double: " + Double.MIN_VALUE);
+
+        Scanner in = new Scanner(System.in);
+        var t= in.nextFloat();
     }
 
 }

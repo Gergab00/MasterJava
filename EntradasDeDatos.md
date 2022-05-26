@@ -1,0 +1,3 @@
+# Entrada de datos. Lectura de datos por teclado en Java. Scanner y BufferedReader
+
+La entrada o lectura de datos en Java es uno de los conceptos más importantes y fundamentales al momento de interactuar con el usuario de nuestro programa. La entrada de datos en Java, a diferencia de otros lenguajes es un poco complicada (no demasiado) y existen diferentes formas de hacerlo, unas más complejas que otras. En esta sección veremos dos maneras sencillas de leer datos para nuestro programa en Java, veremos entonces dos formas de leer datos del usuario por teclado. La primera usando las clases __BufferedReader__ y __InputStreamReader__ ambas de la librería _java.io_ y la segunda con la clase __Scanner__ de la librería _java.util_.

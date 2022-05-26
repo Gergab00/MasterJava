@@ -60,7 +60,10 @@ Java es un lenguaje de tipado estático. Es decir, se define el tipo de dato de 
 - _float_ Es un tipo dato para almacenar números en coma flotante con precisión simple de 32 bits.
 - _double_ Es un tipo de dato para almacenar números en coma flotante con doble precisión de 64 bits.
 - _boolean_ Sirve para definir tipos de datos booleanos. Es decir, aquellos que tienen un valor de true o false. Ocupa 1 bit de información.
-- _char_ Es un tipo de datos que representa a un carácter Unicode sencillo de 16 bits.
+- _char_ Es un tipo de datos que representa a un carácter Unicode sencillo de 16 bits. ![Ver mapa de caractéres Unico](https://unicode-table.com/es/)
 - _var_ Se introdujo en Java 10. La inferencia de tipos se utiliza en la palabra clave var en la que detecta automáticamente el tipo de datos de una variable en función del contexto circundante.
 
 ___Nota:___ En los números tipo float y double se puede usar la letra e para notación científica, donde e va seguido de un número y es el número de espacios que se recorre el punto a la derecha, pro ejemplo 2.12e3f es igual a 2120.0, si se usa un número negativo después de la e, el punto se recorre a la izquierda, por ejemplo 1.5e-10f = 0.00000000015f
+
+## Otros links
+![Entrada de datos. Lectura de datos por teclado en Java. Scanner y BufferedReader](/EntradasDeDatos.md)
