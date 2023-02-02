@@ -66,5 +66,5 @@ Java es un lenguaje de tipado estático. Es decir, se define el tipo de dato de 
 ___Nota:___ En los números tipo float y double se puede usar la letra e para notación científica, donde e va seguido de un número y es el número de espacios que se recorre el punto a la derecha, pro ejemplo 2.12e3f es igual a 2120.0, si se usa un número negativo después de la e, el punto se recorre a la izquierda, por ejemplo 1.5e-10f = 0.00000000015f
 
 ## Otros links
-![Entrada de datos. Lectura de datos por teclado en Java. Scanner y BufferedReader](/EntradasDeDatos.md)
-![Anotaciones](/Anotaciones.md)
+![Anotaciones](/documents/Anotaciones.md)
+![Entrada de datos. Lectura de datos por teclado en Java. Scanner y BufferedReader](/documents/EntradasDeDatos.md)
