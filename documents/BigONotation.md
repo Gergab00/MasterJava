@@ -79,3 +79,7 @@ Algunos ejemplos de notaciones comunes de Big O incluyen:
     Este código implementa una búsqueda binaria, un algoritmo que permite buscar un elemento en una secuencia ordenada de datos. La complejidad del algoritmo es **O(log n)** porque, en cada iteración, la cantidad de elementos que deben ser revisados se divide a la mitad.
 
     Por lo tanto, a medida que el tamaño de la secuencia aumenta, la cantidad de iteraciones necesarias para encontrar el elemento target se mantiene constante. En el peor de los casos, se necesitan log2(n) iteraciones para encontrar el elemento.
+
+    > 💡 **NOTA:** Cuando en una entrevista te preguntan sobre la complejidad de un algoritmo, es importante que menciones en una expresion **`Big O`** como el tamaño del conjunto de datos afecta el rendimiento de ese algoritmo.
+
+    
