@@ -10,7 +10,7 @@ La clase Scanner de la librería java.util es también muy sencilla para obtener
 
 La entrada de datos con estas dos clases se puede hacer un menos de tres líneas según lo que necesitemos hacer, veremos cómo leer números y texto y las particularidades de ambos casos al usar estas clases.
 
-~~~
+~~~java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

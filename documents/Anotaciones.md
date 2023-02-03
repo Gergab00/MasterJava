@@ -7,7 +7,7 @@ Las anotaciones en Java son una especie de etiquetas en el código que describen
 Pero las anotaciones no sólo pueden tener el sentido de “por seguridad”: se pueden almacenar algunos datos que se utilizarán más adelante.
 
 La anotación más simple aplicada a una clase se ve así:
-~~~
+~~~java
 @MiAnotacion
 public class Foo {}
 ~~~
@@ -17,7 +17,7 @@ public class Foo {}
 En primer lugar, veamos las anotaciones simples que proporciona la biblioteca estándar.
 
 La anotación viene dada por una descripción de la interfaz correspondiente. Por ejemplo, así:
-~~~
+~~~java
 import java.lang.annotation.*;
 @Target(value=ElementType.FIELD)
 @Retention(value= RetentionPolicy.RUNTIME)

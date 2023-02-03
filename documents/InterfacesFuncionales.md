@@ -24,7 +24,7 @@ Estas interfaces funcionales son esenciales para trabajar con expresiones lambda
 
 Aquí hay un ejemplo de código que muestra cómo utilizar las interfaces de **_java.util.function_**:
 
-```
+```java
 import java.util.function.Function;
 import java.util.function.Consumer;
 import java.util.function.Predicate;
