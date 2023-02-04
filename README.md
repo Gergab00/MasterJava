@@ -70,4 +70,4 @@ ___Nota:___ En los números tipo float y double se puede usar la letra e para no
 2. [Big O Notation](/documents/BigONotation.md)
 3. [Entrada de datos. Lectura de datos por teclado en Java. Scanner y BufferedReader](/documents/EntradasDeDatos.md)
 4. [Interfaces Funcionales](/documents/InterfacesFuncionales.md)
-5. [Streams](/documents/Streams.md)
+5. [API Streams](/documents/Streams.md)
