@@ -68,7 +68,8 @@ ___Nota:___ En los números tipo float y double se puede usar la letra e para no
 ## Otros links
 1. [Anotaciones](/documents/Anotaciones.md)
 2. [Big O Notation](/documents/BigONotation.md)
-3. [Entrada de datos. Lectura de datos por teclado en Java. Scanner y BufferedReader](/documents/EntradasDeDatos.md)
-4. [Interfaces Funcionales](/documents/InterfacesFuncionales.md)
-5. [API Optional](/documents/Optional.md)
-6. [API Streams](/documents/Streams.md)
+3. [Colecciones](/documents/Colecciones.md)
+4. [Entrada de datos. Lectura de datos por teclado en Java. Scanner y BufferedReader](/documents/EntradasDeDatos.md)
+5. [Interfaces Funcionales](/documents/InterfacesFuncionales.md)
+6. [API Optional](/documents/Optional.md)
+7. [API Streams](/documents/Streams.md)
