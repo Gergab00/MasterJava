@@ -173,3 +173,17 @@ numbers.stream().filter(number -> number % 2 != 0).forEach(System.out::println);
 List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
 numbers.stream().filter(number -> number % 2 == 0).forEach(System.out::println);
 ``` 
+
+## Resumen
+
+El API de Streams de Java 8 es una herramienta muy poderosa para trabajar con colecciones de datos. Los Streams permiten trabajar con colecciones de datos de una manera declarativa, lo que hace que el código sea más conciso y fácil de entender. Los Streams también son muy eficientes, ya que se pueden ejecutar en paralelo para aprovechar al máximo los recursos de la CPU. Sin embargo, es importante tener en cuenta las consideraciones y buenas prácticas para el uso de Streams, ya que de lo contrario puede provocar errores impredecibles.
+
+## Material de apoyo
+
+* [Java 8 Streams Tutorial by Baeldung](https://www.baeldung.com/java-8-streams)
+* [Java 8 Streams Tutorial by Java Code Geeks](https://www.javacodegeeks.com/2015/08/java-8-streams-tutorial.html)
+* [Java 8 Streams Tutorial by Journaldev](https://www.journaldev.com/2774/java-8-stream)
+* [Java 8 Streams Tutorial by Tutorials Point](https://www.tutorialspoint.com/java8/java8_streams.htm)
+* [Java 8 Streams Tutorial by Javatpoint](https://www.javatpoint.com/java-8-stream)
+
+[Inicio](/README.md)

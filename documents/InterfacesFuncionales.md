@@ -77,3 +77,31 @@ El paquete **_java.util.function_** es un paquete que contiene una serie de func
 * **<span id="get">`get()`</span>**: La función **`get()`** se utiliza para obtener el valor de un objeto. Es una función que se define en la interfaz **`Supplier<T>`** y se usa para proveer un objeto de tipo **`T`**. Por ejemplo, podríamos usar un Supplier para proveer una instancia de una clase.
 
 Además de las funciones mencionadas anteriormente, hay otras funciones en el paquete **_java.util.function_**, como **`BiFunction<T, U, R>`**, **`BinaryOperator<T>`**, **`UnaryOperator<T>`**, etc. Estas funciones son versiones más específicas de las funciones mencionadas anteriormente y se usan para realizar operaciones específicas en objetos funcionales.
+
+## Consideraciones y buenas prácticas de programación para las interfaces funcionales
+
+Aquí hay algunas consideraciones y buenas prácticas que debes tener en cuenta al trabajar con ellas:
+
+1. Utiliza interfaces funcionales para representar una única operación: Las interfaces funcionales deben ser utilizadas para representar una única operación. Si una interfaz funcional representa más de una operación, es mejor dividirla en múltiples interfaces funcionales.
+
+2. Usa la interfaz funcional apropiada: Java viene con varias interfaces funcionales, como Function, Consumer y Supplier. Es importante elegir la interfaz funcional adecuada para el trabajo.
+
+3. Evita el uso de clases anónimas: En Java 8 y superiores, las clases anónimas se utilizan a menudo para implementar interfaces funcionales. Sin embargo, es mejor evitar su uso y optar por expresiones lambda en su lugar, ya que son más concisas y legibles.
+
+4. Utiliza el método default en la interfaz funcional: La implementación del método default en una interfaz funcional permite agregar un comportamiento por defecto a una interfaz sin tener que crear una nueva clase.
+
+5. Evita el uso de estados compartidos: Cuando se utilizan interfaces funcionales en combinación con streams, es fácil compartir estados accidentalmente. Por lo tanto, es importante tener cuidado y evitar compartir estados.
+
+6. Utiliza una interfaz funcional para representar el tipo de una expresión lambda: Es posible que desees utilizar una expresión lambda para representar una operación en una clase. En este caso, debes utilizar una interfaz funcional para representar el tipo de la expresión lambda.
+
+En general, las interfaces funcionales son una herramienta poderosa para la programación en Java 8 y superiores. Si sigues estas consideraciones y buenas prácticas, te ayudarán a escribir código más legible y eficiente.
+
+## Resumen
+
+Las interfaces funcionales son esenciales para trabajar con expresiones lambda y streams en Java 8 y proporcionan una manera poderosa de escribir código más conciso y legible. También hemos aprendido sobre algunas de las funciones más comunes en el paquete **_java.util.function_**.
+
+## Material de apoyo
+
+* [Interfaces Funcionales en Java 8](https://www.baeldung.com/java-8-functional-interfaces)
+
+[Inicio](/README.md)

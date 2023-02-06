@@ -82,4 +82,10 @@ Algunos ejemplos de notaciones comunes de Big O incluyen:
 
     > 💡 **NOTA:** Cuando en una entrevista te preguntan sobre la complejidad de un algoritmo, es importante que menciones en una expresion **`Big O`** como el tamaño del conjunto de datos afecta el rendimiento de ese algoritmo.
 
-    
+    ## Material de apoyo
+
+    - [Big O Notation](https://www.interviewcake.com/article/java/big-o-notation-time-and-space-complexity)
+    - [Big O Cheat Sheet](http://bigocheatsheet.com/)
+    - [Big O Notation](https://www.youtube.com/watch?v=__vX2sjlpXU)
+
+    [Inicio](/README.md)

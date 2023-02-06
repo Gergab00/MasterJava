@@ -193,7 +193,7 @@ public class OptionalExample {
 
 En este ejemplo, utilizamos el método **`reduce()`** para combinar todos los elementos de un stream en un único objeto Optional. Si el stream está vacío, se devuelve un Optional vacío. Luego, utilizamos el método **`orElse()`** para obtener el valor almacenado en el Optional. Si el Optional está vacío, se devuelve la cadena de texto _"No strings present."_.
 
-## Consideraciones y buenas prácticas para el uso de Optional
+## Consideraciones y buenas prácticas de programación para el uso de Optional
 
 1. Evite retornar Optional vacío: Siempre es mejor retornar un valor no nulo en lugar de un Optional vacío. Si un método no puede encontrar un valor, es mejor retornar un valor por defecto que un Optional vacío. Por ejemplo:
 
@@ -202,3 +202,15 @@ En este ejemplo, utilizamos el método **`reduce()`** para combinar todos los el
 3. Evite crear Optional vacío: En lugar de crear un Optional vacío, es mejor retornar un valor por defecto o lanzar una excepción.
 
 4. No confunda Optional con nulos: Optional no es un reemplazo para los valores nulos, sino una forma de manejar los valores nulos de forma más segura y eficiente.
+
+## Resumen
+
+En este documento se ha visto cómo utilizar la clase **Optional** para evitar excepciones **NullPointerException**. Esta clase proporciona métodos que permiten crear objetos **Optional** a partir de valores nulos, comprobar si un objeto Optional está vacío o contiene un valor, obtener el valor almacenado en un objeto Optional, filtrar el valor almacenado en un objeto Optional, transformar un objeto Optional en otro objeto Optional, combinar varios objetos Optional en un único objeto Optional, y utilizar objetos Optional con streams.
+
+## Material de apoyo
+
+* [Java 8 Optional Tutorial by Baeldung](https://www.baeldung.com/java-optional)
+* [Java 8 Optional Tutorial by Journaldev](https://www.journaldev.com/2324/java-8-optional-class)
+* [Java 8 Optional Tutorial by Callicoder](https://www.callicoder.com/java-8-optional-class-tutorial/)
+* [Java 8 Optional Tutorial by Mkyong](https://www.mkyong.com/java8/java-8-optional-in-depth/)
+* [Java 8 Optional Tutorial by Java Code Geeks](https://www.javacodegeeks.com/2018/06/java-8-optional-tutorial.html)
