@@ -1,4 +1,4 @@
-## Interfaces Funcionales
+## Interfaces Funcionales {#interfaces-funcionales}
 
 Java 8 introdujo muchas nuevas características, como las Interfaces Funcionales y los Streams. Ambas características son una forma de hacer el código más conciso y fácil de entender.
 
@@ -12,11 +12,11 @@ El paquete **_java.util.function_** incluye varias interfaces funcionales para d
 
 - **Function:** una interfaz funcional que representa una función que toma un argumento y devuelve un resultado.
 
-- **Consumer:** una interfaz funcional que representa una función que toma un argumento y no devuelve un resultado.
+- **<span id="consumer">Consumer:</span>** una interfaz funcional que representa una función que toma un argumento y no devuelve un resultado.
 
 - **Predicate:** una interfaz funcional que representa una función que toma un argumento y devuelve un valor booleano.
 
-- **Supplier:** una interfaz funcional que representa una función que no toma argumentos y devuelve un resultado.
+- **<span id="supplier">Supplier:</span>** una interfaz funcional que representa una función que no toma argumentos y devuelve un resultado.
 
 - **Operator:** una interfaz funcional que representa una función que toma un argumento y devuelve un resultado del mismo tipo.
 
