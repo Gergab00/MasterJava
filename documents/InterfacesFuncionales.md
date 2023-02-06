@@ -10,15 +10,17 @@ Las interfaces funcionales son similares a los tipos de datos que se usan para r
 
 El paquete **_java.util.function_** incluye varias interfaces funcionales para diferentes tipos de funciones, tales como:
 
-- **Function:** una interfaz funcional que representa una función que toma un argumento y devuelve un resultado.
+- **<span id="function">Function:</span>** una interfaz funcional que representa una función que toma un argumento y devuelve un resultado.
 
 - **<span id="consumer">Consumer:</span>** una interfaz funcional que representa una función que toma un argumento y no devuelve un resultado.
 
-- **Predicate:** una interfaz funcional que representa una función que toma un argumento y devuelve un valor booleano.
+- **<span id="predicate">Predicate:** una interfaz funcional que representa una función que toma un argumento y devuelve un valor booleano.
 
 - **<span id="supplier">Supplier:</span>** una interfaz funcional que representa una función que no toma argumentos y devuelve un resultado.
 
 - **Operator:** una interfaz funcional que representa una función que toma un argumento y devuelve un resultado del mismo tipo.
+
+- **<span id="collector">Collector:</span>** una interfaz funcional que representa una función que toma un argumento y devuelve un resultado del mismo tipo.
 
 Estas interfaces funcionales son esenciales para trabajar con expresiones lambda y streams en Java 8 y proporcionan una manera poderosa de escribir código más conciso y legible.
 
@@ -68,10 +70,10 @@ El paquete **_java.util.function_** es un paquete que contiene una serie de func
 
 * **`apply():`** La función **`apply()`** se utiliza para aplicar una transformación a un objeto. Es una función que se define en la interfaz **`Function<T, R>`** y se usa para transformar un objeto de tipo **`T`** en un objeto de tipo **`R`**. Por ejemplo, podríamos usar una función Function para transformar un String en un Integer.
 
-* **`accept()`**: La función **`accept()`** se utiliza para realizar una operación sobre un objeto. Es una función que se define en la interfaz **`Consumer<T>`** y se usa para consumir un objeto de tipo **`T`**. Por ejemplo, podríamos usar un Consumer para imprimir el valor de un String.
+* **<span id="accept">`accept()`</span>**: La función **`accept()`** se utiliza para realizar una operación sobre un objeto. Es una función que se define en la interfaz **`Consumer<T>`** y se usa para consumir un objeto de tipo **`T`**. Por ejemplo, podríamos usar un Consumer para imprimir el valor de un String.
 
 * **`test()`**: La función **`test()`** se utiliza para verificar si un objeto cumple con ciertas condiciones. Es una función que se define en la interfaz **`Predicate<T>`** y se usa para determinar si un objeto de tipo **`T`** cumple con una condición determinada. Por ejemplo, podríamos usar un Predicate para determinar si un String es un número.
 
-* **`get()`**: La función **`get()`** se utiliza para obtener el valor de un objeto. Es una función que se define en la interfaz **`Supplier<T>`** y se usa para proveer un objeto de tipo **`T`**. Por ejemplo, podríamos usar un Supplier para proveer una instancia de una clase.
+* **<span id="get">`get()`</span>**: La función **`get()`** se utiliza para obtener el valor de un objeto. Es una función que se define en la interfaz **`Supplier<T>`** y se usa para proveer un objeto de tipo **`T`**. Por ejemplo, podríamos usar un Supplier para proveer una instancia de una clase.
 
 Además de las funciones mencionadas anteriormente, hay otras funciones en el paquete **_java.util.function_**, como **`BiFunction<T, U, R>`**, **`BinaryOperator<T>`**, **`UnaryOperator<T>`**, etc. Estas funciones son versiones más específicas de las funciones mencionadas anteriormente y se usan para realizar operaciones específicas en objetos funcionales.

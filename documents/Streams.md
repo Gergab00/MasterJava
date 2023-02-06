@@ -107,3 +107,69 @@ System.out.println();
 ```
 
 En este ejemplo, creamos una lista de números y luego la convertimos en un stream. Después usamos la operación **`filter()`** para filtrar los números pares, y luego usamos **`collect()`** para convertir el stream en una lista. La operación **`count()`** se usa para contar el número de elementos en el stream después de haber sido filtrados. Las operaciones **`max()`** y **`min()`** se usan para encontrar el máximo y el mínimo número en el stream, respectivamente. Finalmente, usamos la operación **`forEach()`** para imprimir cada elemento en el stream después de haber sido filtrados.
+
+## Consideraciones y buenas prácticas para el uso de Streams
+
+1. Evite la creación innecesaria de Streams: Crear un Stream cuesta recursos, por lo que es importante evitar crear Streams innecesarios. Por ejemplo, si solo necesita recorrer una lista una sola vez, no tiene sentido crear un Stream. En su lugar, puede usar un simple for o un for-each.
+
+```java
+// Incorrecto: Creación innecesaria de un Stream
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+numbers.stream().forEach(System.out::println);
+
+// Correcto: Uso de un for-each
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+for (int number : numbers) {
+    System.out.println(number);
+}
+```
+
+2. No almacene un Stream en una variable si no se va a reutilizar: Una vez que se ha consumido un Stream, no se puede volver a usar. Por lo tanto, es inútil almacenar un Stream en una variable si no se va a reutilizar.
+
+```java
+// Incorrecto: Almacenamiento inútil de un Stream
+Stream<Integer> stream = numbers.stream();
+stream.forEach(System.out::println);
+stream.forEach(System.out::println); // Esta línea generará un error
+
+// Correcto: Creación de un Stream en el momento de su uso
+numbers.stream().forEach(System.out::println);
+numbers.stream().forEach(System.out::println);
+```
+
+3. No modifique una colección mientras se recorre con un Stream: Modificar una colección mientras se recorre con un Stream puede provocar errores impredecibles. En su lugar, se recomienda usar la operación collect para recopilar los elementos en una colección distinta.
+
+```java
+// Incorrecto: Modificación de una colección mientras se recorre con un Stream
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+numbers.stream().forEach(number -> numbers.remove(number));
+
+// Correcto: Uso de collect para recopilar los elementos en una colección distinta
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+List<Integer> evenNumbers = numbers.stream().filter(number -> number % 2 == 0).collect(Collectors.toList());
+```
+
+4. No use operaciones intermedias innecesarias: Cada operación intermedia que se aplica a un Stream produce un nuevo Stream. Por lo tanto, es importante evitar operaciones intermedias innecesarias para no desperdiciar recursos.
+
+```java
+// Incorrecto: Operaciones intermedias innecesarias
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+numbers.stream().filter(number -> number % 2 == 0).filter(number -> number > 3).forEach(System.out::println);
+
+// Correcto: Uso de una sola operación intermedia
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+numbers.stream().filter(number -> number % 2 == 0 && number > 3).forEach(System.out::println);
+```
+
+5. No use operaciones terminales innecesarias: Cada operación terminal que se aplica a un Stream consume el Stream. Por lo tanto, es importante evitar operaciones terminales innecesarias para no desperdiciar recursos.
+
+```java
+// Incorrecto: Operaciones terminales innecesarias
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+numbers.stream().filter(number -> number % 2 == 0).forEach(System.out::println);
+numbers.stream().filter(number -> number % 2 != 0).forEach(System.out::println);
+
+// Correcto: Uso de una sola operación terminal
+List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+numbers.stream().filter(number -> number % 2 == 0).forEach(System.out::println);
+``` 
