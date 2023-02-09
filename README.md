@@ -5,11 +5,17 @@ Java es un lenguaje de programación de alto nivel ampliamente utilizado para de
 
 ## Indice
 1. [Fundamentales](/documents/Fundamentales.md)
-    a. [Sintaxis Básica](/documents/Fundamentales.md#sintaxis-básica)
-    b. [Palabras Reservadas](/documents/Fundamentales.md#palabras-reservadas)
-    c. [Notación CamelCase](/documents/Fundamentales.md#camel-case)
-    d. [Variables](/documents/Fundamentales.md#variables)
-    c. [Tipos de datos](/documents/Fundamentales.md#tipos-de-datos)
+    - a. [Sintaxis Básica](/documents/Fundamentales.md#sintaxis-básica)
+    - b. [Palabras Reservadas](/documents/Fundamentales.md#palabras-reservadas)
+    - c. [Notación CamelCase](/documents/Fundamentales.md#camel-case)
+    - d. [Variables](/documents/Fundamentales.md#variables)
+    - e. [Tipos de datos](/documents/Fundamentales.md#tipos-de-datos)
+    - f. [Modificadores de acceso y no acceso](/documents/Fundamentales.md#modificadores-de-acceso-y-no-acceso)
+    - g. [Condicionales](/documents/Fundamentales.md#condicionales)
+    - h. [Bucles](/documents/Fundamentales.md#bucles)
+    - i. [Funciones](/documents/Fundamentales.md#funciones)
+2. [Fundamentales 2](/documents/Fundamentales_2.md)
+    - a. [Estructuras de datos](/documents/Fundamentales_2.md#estructuras-de-datos)
 ---------------
 1. [Anotaciones](/documents/Anotaciones.md)
 2. [Big O Notation](/documents/BigONotation.md)

@@ -158,7 +158,7 @@ Java es un lenguaje de tipado estático. Es decir, se define el tipo de dato de 
 - _Interfaces_ Es un tipo de dato que representa un conjunto de métodos que deben ser implementados por una clase. Es un tipo de dato no primitivo.
 - _Enum_ Es un tipo de dato que representa un conjunto de constantes. Es un tipo de dato no primitivo.
 
-### Modificadores de acceso y no acceso
+## Modificadores de acceso y no acceso {#modificadores-de-acceso-y-no-acceso}
 
 Los modificadores de acceso son palabras clave que se utilizan para controlar el acceso a los elementos de una clase. Estos modificadores se aplican a las clases, atributos, métodos y constructores. Hay cuatro tipos de modificadores de acceso en Java:
 
@@ -180,7 +180,7 @@ Además de los modificadores de acceso, también hay modificadores de no acceso.
 
 > **Tip:** Una pregunta muy frecuente durante las entrevistas de trabajo es "¿Que diferencia hay entre una clase static y una clase normal?". La respuesta que una clase estática es una clase que se puede utilizar sin tener que crear una instancia de la clase. Por otro lado, una clase normal se crea mediante la instanciación de un objeto a partir de ella. Cada instancia de una clase normal tiene su propia copia de los métodos y variables de la clase.
 
-#### Consideraciones y buenas prácticas de programación con modificadores de acceso
+### Consideraciones y buenas prácticas de programación con modificadores de acceso
 
 Algunas consideraciones y buenas prácticas de programación con modificadores de acceso incluyen:
 
@@ -195,3 +195,185 @@ Algunas consideraciones y buenas prácticas de programación con modificadores d
 5. Evitar la exposición innecesaria: Es importante evitar exponer elementos que no necesitan ser accesibles desde otras partes del código. Esto reduce la superficie de ataque del código y mejora la seguridad del sistema.
 
 Estas son solo algunas de las consideraciones y buenas prácticas de programación con modificadores de acceso. El uso correcto de los modificadores de acceso es esencial para la construcción de sistemas seguros, fiables y mantenibles
+
+## Conondicionales en Java {#conondicionales-en-java}
+
+Las condicionales en Java son estructuras de control de flujo que permiten tomar decisiones en tiempo de ejecución basadas en la evaluación de ciertas condiciones. Las condicionales en Java se implementan a través de los siguientes tres operadores:
+
+1. _if_: El operador if es el más simple de todos los operadores de condición en Java. Si la condición especificada en el if es verdadera, se ejecutan las instrucciones dentro del bloque if. Por ejemplo:
+
+```java
+if (x > 0) {
+  System.out.println("x es positivo");
+}
+```
+
+2. _if-else_: El operador if-else es una extensión del operador if. Si la condición especificada en el if es verdadera, se ejecutan las instrucciones dentro del bloque if. De lo contrario, se ejecutan las instrucciones dentro del bloque else. Por ejemplo:
+
+```java
+if (x > 0) {
+  System.out.println("x es positivo");
+} else {
+  System.out.println("x es negativo");
+}
+```
+
+> **Nota:** Se puede utilizar el operador if-else-if que es una extensión del operador if-else. El operador if-else-if permite evaluar múltiples condiciones.
+
+3. _switch_: El operador switch es una extensión del operador if-else. El operador switch evalúa una expresión y ejecuta las instrucciones correspondientes a cada caso. Por ejemplo:
+
+```java
+int diaSemana = 4;
+
+switch (diaSemana) {
+  case 1:
+    System.out.println("Lunes");
+    break;
+  case 2:
+    System.out.println("Martes");
+    break;
+  case 3:
+    System.out.println("Miércoles");
+    break;
+  case 4:
+    System.out.println("Jueves");
+    break;
+  case 5:
+    System.out.println("Viernes");
+    break;
+  case 6:
+    System.out.println("Sábado");
+    break;
+  case 7:
+    System.out.println("Domingo");
+    break;
+  default:
+    System.out.println("Día inválido");
+    break;
+}
+```
+4. _Operador ternario_: El operador ternario es una extensión del operador if-else. El operador ternario es una expresión condicional que evalúa una condición y devuelve un valor dependiendo de si la condición es verdadera o falsa. Por ejemplo:
+
+```java
+int x = 5;
+int y = 10;
+
+int resultado = (x > y) ? x : y;
+```
+### Consideraciones y buenas prácticas de programación con condicionales
+
+Algunas consideraciones y buenas prácticas de programación con condicionales incluyen:
+
+1. Evitar la anidación excesiva: Es importante evitar la anidación excesiva de condicionales. Esto es porque la anidación excesiva de condicionales puede hacer que el código sea difícil de leer y mantener.
+
+## Bucles en Java {#bucles-en-java}
+
+Los bucles en Java son estructuras de control de flujo que permiten ejecutar un bloque de código repetidamente. Los bucles en Java se implementan a través de los siguientes tres operadores:
+
+1. _while_: El operador while es el más simple de todos los operadores de bucle en Java. El operador while ejecuta un bloque de código mientras la condición especificada en el while es verdadera. Por ejemplo:
+
+```java
+int x = 0;
+
+while (x < 10) {
+  System.out.println(x);
+  x++;
+}
+```
+
+2. _do-while_: El operador do-while es una extensión del operador while. El operador do-while ejecuta un bloque de código mientras la condición especificada en el while es verdadera. Por ejemplo:
+
+```java
+int x = 0;
+
+do {
+  System.out.println(x);
+  x++;
+} while (x < 10);
+```
+
+3. _for_: El operador for es una extensión del operador while. El operador for ejecuta un bloque de código mientras la condición especificada en el for es verdadera. Por ejemplo:
+
+```java
+for (int x = 0; x < 10; x++) {
+  System.out.println(x);
+}
+```
+
+En la inicialización `int x = 0;`, se pueden declarar y asignar valores a variables que se usarán en el bucle. La condición `x < 10;` es una expresión que se evalúa en cada iteración. Si la condición es verdadera, se ejecuta el bloque de código dentro del bucle. Si la condición es falsa, se sale del bucle. Finalmente, en la actualización `x++`, se pueden actualizar las variables declaradas en la inicialización.
+
+4. _for-each_: El operador for-each es una extensión del operador for. El operador for-each se utiliza para recorrer los elementos de una matriz o colección. Por ejemplo:
+
+```java
+int[] numeros = {1, 2, 3, 4, 5};
+
+for (int numero : numeros) {
+  System.out.println(numero);
+}
+```
+
+> **Nota:** El operador for-each no se puede utilizar para recorrer los elementos de una matriz bidimensional.
+
+### Consideraciones y buenas prácticas de programación con bucles
+
+Algunas consideraciones y buenas prácticas de programación con bucles incluyen:
+
+1. Evite anidar bucles profundamente: A medida que anida bucles, su código se vuelve más difícil de leer y mantener. Trate de limitar el número de anidaciones a 2 o 3.
+
+2. Verifique la condición de salida de forma explícita: Asegúrese de que la condición de salida sea clara y explícita. No dependa de una variable externa para determinar si se debe continuar el bucle.
+
+3. Verifique la longitud del bucle: Asegúrese de que el bucle tenga una longitud definida y no se ejecute indefinidamente. Esto puede ser un problema especialmente cuando se utiliza un bucle while sin una condición explícita.
+
+4. No modifique la variable de control en el cuerpo del bucle: No modifique la variable de control dentro del cuerpo del bucle. Esto puede dar lugar a comportamientos impredecibles y difíciles de rastrear.
+
+5. Use la estructura de bucle adecuada: Elija la estructura de bucle adecuada para su problema. Por ejemplo, utilice un bucle for si sabe el número de iteraciones, y un bucle while si la condición de salida es incierta.
+
+6. Verifique las variables de control de bucle: Verifique las variables de control de bucle en cada iteración. Esto puede ayudar a identificar errores y asegurarse de que el bucle se comporte como se espera.
+
+## Funciones en Java {#funciones-en-java}
+
+En Java, las funciones son conocidas como métodos. Un método es un bloque de código que realiza una tarea específica y puede ser invocado o llamado en cualquier parte de un programa. Los métodos son una parte importante de la programación en Java ya que ayudan a hacer el código más legible, fácil de mantener y reutilizable.
+
+Para crear un método en Java, debes especificar la siguiente información:
+
+1. El tipo de retorno: El tipo de retorno es el tipo de datos que devuelve el método. Si el método no devuelve ningún valor, se especifica como `void`.
+
+2. El nombre del método: El nombre del método es el nombre que se utiliza para invocar el método, debe ser único y de preferencia describir lo que hace el método.
+
+3. La lista de parámetros: La lista de parámetros es una lista de variables que se utilizan dentro del método. La lista de parámetros se especifica entre paréntesis y se separa con comas. Cada parámetro debe especificar el tipo de datos y el nombre de la variable.
+
+4. El cuerpo del método: El cuerpo del método es el bloque de código que se ejecuta cuando el método es invocado. El cuerpo del método se especifica entre llaves.
+
+Aquí hay un ejemplo de un método en Java que suma dos números y devuelve el resultado:
+
+```java
+public int suma(int a, int b) {
+    int resultado = a + b;
+    return resultado;
+}
+```
+
+En el ejemplo anterior, el método `suma` es un método público que devuelve un valor entero `int`. El método `suma` toma dos parámetros enteros `a` y `b`. El método `suma` suma los dos parámetros y devuelve el resultado.
+
+### Consideraciones y buenas prácticas de programación con funciones
+
+Algunas consideraciones y buenas prácticas de programación con funciones incluyen:
+
+1. Nombres claros y significativos: Asegúrese de que los nombres de las funciones sean claros y significativos. Esto hará que sea más fácil para otros desarrolladores comprender el propósito de la función y cómo utilizarla.
+
+2. Evite funciones largas: Asegúrese de que las funciones no sean demasiado largas. Las funciones largas son difíciles de leer y mantener. Si una función es demasiado larga, considere dividirla en varias funciones más pequeñas.
+
+3. Una sola responsabilidad: Cada función debe tener una sola responsabilidad. Esto hará que sea más fácil para otros desarrolladores entender y mantener el código. Si una función tiene más de una responsabilidad, considere dividirla en varias funciones más pequeñas.
+
+4. Evite funciones anidadas: Asegúrese de que las funciones no estén anidadas. Las funciones anidadas son difíciles de leer y mantener. Si una función está anidada, considere extraerla a una función independiente.
+
+5. Pruebas unitarias: Asegúrese de que las funciones tengan pruebas unitarias. Las pruebas unitarias son una forma de probar que las funciones funcionen correctamente. Las pruebas unitarias también ayudan a detectar errores y asegurarse de que el código se comporte como se espera.
+
+6. Parámetros explícitos: Asegúrese de especificar explícitamente los parámetros de entrada y salida de cada función. Esto ayuda a documentar la función y a reducir la confusión al utilizarla.
+
+## Material de apoyo
+
+* [Java Programming Tutorial from Tutoriales point](https://www.tutorialspoint.com/java/index.htm)
+* [Java Programming Tutorial from Javapoint](https://www.javatpoint.com/java-tutorial)
+* [Java Programming Tutorial from W3Schools](https://www.w3schools.com/java/default.asp)
+* [Java Programming Tutorial from GeeksforGeeks](https://www.geeksforgeeks.org/java/)
