@@ -71,9 +71,41 @@ int numero = numeros[0][0];
 
 > **Nota**: Para ver la información sobre el resto de estructuras de datos, puedes consultar el siguiente enlace: [Colecciones](/documents/Colecciones.md)
 
-## Algoritmos {#algoritmos}
+## Clase Arrays {#clase-arrays}
 
+La clase Arrays es una clase de utilidades que nos permite trabajar con arrays. La clase Arrays incluye métodos para ordenar, buscar y copiar arrays. La clase Arrays también incluye métodos para convertir arrays en listas y viceversa.
 
+### Métodos de la clase Arrays {#metodos-de-la-clase-arrays}
+
+#### sort {#sort} 
+Ordena un array de forma ascendente.
+
+#### binarySearch {#binarysearch}
+Busca un elemento en un array ordenado.
+* **copyOf**: Copia un array.
+* **copyOfRange**: Copia un rango de elementos de un array.
+* **equals**: Es un método estático que se utiliza para comparar dos arrays para verificar si tienen los mismos elementos en el mismo orden. Este método es muy útil cuando quieres comparar dos arrays para determinar si son iguales o no. Aquí hay un ejemplo de uso:
+
+```java
+int[] array1 = {1, 2, 3, 4, 5};
+int[] array2 = {1, 2, 3, 4, 5};
+
+boolean areArraysEqual = Arrays.equals(array1, array2);
+
+System.out.println(areArraysEqual);
+```
+En este ejemplo, la variable areArraysEqual será true porque los elementos de array1 y array2 son los mismos y están en el mismo orden.
+
+También puedes usar Arrays.equals para comparar arrays de otros tipos, como String[] o Object[], y el funcionamiento es el mismo. Por ejemplo:
+
+```java
+En este ejemplo, la variable areArraysEqual será true porque los elementos de array1 y array2 son los mismos y están en el mismo orden.
+
+También puedes usar Arrays.equals para comparar arrays de otros tipos, como String[] o Object[], y el funcionamiento es el mismo. Por ejemplo:
+```
+
+* **fill**: Rellena un array con un valor.
+* **asList**: Convierte un array en una lista.
 
 ## Material de apoyo {#material-de-apoyo}
 
