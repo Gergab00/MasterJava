@@ -10,10 +10,10 @@
 ### [Inversión de control y contenedor de dependencias](/documents/springboot/fundamentos.md#inversion-de-control-y-contenedor-de-dependencias)
 ### [Anotaciones básicas de Spring Boot](/documents/springboot/fundamentos.md#anotaciones-basicas-de-spring-boot)
 
-## 3. Desarrollo de aplicaciones web con Spring Boot
+## 3. [Desarrollo de aplicaciones web con Spring Boot](/documents/springboot/aplicaciones_web.md)
 
-### Creación de controladores y rutas
-### Acceso a bases de datos con JPA
+### [Creación de controladores y rutas](/documents/springboot/aplicaciones_web.md#creacion-de-controladores-y-rutas)
+### [Acceso a bases de datos con JPA](/documents/aplicaciones_web.md#acceso-a-bases-de-datos-con-jpa)
 ### Uso de thymeleaf para la generación de vistas
 
 ## 4. Uso de Spring Data
