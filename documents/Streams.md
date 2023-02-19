@@ -24,7 +24,9 @@ Las operaciones intermedias permiten transformar, filtrar y agrupar los elemento
 
 - **`limit()`**: limita el número de elementos del Stream a un valor dado.
 
-- **`skip()`**: salta un número determinado de elementos del Stream.
+- **`skip()`**: salta un número determinado de elementos del Stream.`
+
+- **`reduce()`**: combina los elementos del Stream en un solo valor.
 
 A continuación se muestra un ejemplo de uso de algunas de estas operaciones intermedias:
 
