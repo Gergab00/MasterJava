@@ -371,6 +371,12 @@ Algunas consideraciones y buenas prácticas de programación con funciones inclu
 
 6. Parámetros explícitos: Asegúrese de especificar explícitamente los parámetros de entrada y salida de cada función. Esto ayuda a documentar la función y a reducir la confusión al utilizarla.
 
+## Preguntas de entrevista de trabajo {#preguntas-de-entrevista-de-trabajo}
+
+- ¿Qué son los bloques estáticos e inicializadores estáticos en Java?
+
+Los bloques estáticos o inicializadores estáticos se utilizan para inicializar campos estáticos en Java. Declaramos bloques estáticos cuando queremos intializar campos estáticos en nuestra clase. Bloques estáticos se ejecuta exactamente una vez cuando la clase se carga. Los bloques estáticos se ejecutan incluso antes de que se ejecuten los constructores.
+
 ## Material de apoyo
 
 * [Java Programming Tutorial from Tutoriales point](https://www.tutorialspoint.com/java/index.htm)
