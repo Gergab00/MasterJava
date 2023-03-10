@@ -14,6 +14,10 @@ Las operaciones intermedias permiten transformar, filtrar y agrupar los elemento
 
 - **`filter()`**: filtra los elementos del Stream según una condición dada.
 
+- **`limit()`**: limita el número de elementos del Stream a un valor dado.
+
+- **`flat()`**: aplanar un Stream de Streams en un solo Stream.
+
 - **`flatMap()`**: combina múltiples Streams en un solo Stream.
 
 - **`distinct()`**: elimina los elementos duplicados del Stream.
@@ -106,9 +110,17 @@ System.out.print("Números impares: ");
 numbers.stream().filter(x -> x % 2 != 0).forEach(x -> System.out.print(x + " "));
 System.out.println();
 
+// usamos reduce() para combinar los elementos del stream en un solo valor
+int sum = numbers.stream().reduce(0, Integer::sum);
+System.out.println("Suma de todos los números: " + sum);
+
+// usamos collect() para agrupar los elementos del stream en una lista
+List<Integer> numbersList = numbers.stream().collect(Collectors.toList());
+System.out.println("Lista de números: " + numbersList);
+
 ```
 
-En este ejemplo, creamos una lista de números y luego la convertimos en un stream. Después usamos la operación **`filter()`** para filtrar los números pares, y luego usamos **`collect()`** para convertir el stream en una lista. La operación **`count()`** se usa para contar el número de elementos en el stream después de haber sido filtrados. Las operaciones **`max()`** y **`min()`** se usan para encontrar el máximo y el mínimo número en el stream, respectivamente. Finalmente, usamos la operación **`forEach()`** para imprimir cada elemento en el stream después de haber sido filtrados.
+En este ejemplo, creamos una lista de números y luego la convertimos en un stream. Después usamos la operación **`filter()`** para filtrar los números pares, y luego usamos **`collect()`** para convertir el stream en una lista. La operación **`count()`** se usa para contar el número de elementos en el stream después de haber sido filtrados. Las operaciones **`max()`** y **`min()`** se usan para encontrar el máximo y el mínimo número en el stream, respectivamente. Finalmente, usamos la operación **`forEach()`** para imprimir cada elemento en el stream después de haber sido filtrados. También usamos **`reduce()`** para combinar los elementos del stream en un solo valor. Por último, usamos **`collect()`** para agrupar los elementos del stream en una lista.
 
 ## Consideraciones y buenas prácticas para el uso de Streams
 
