@@ -21,6 +21,12 @@ Java es un lenguaje de programación de alto nivel ampliamente utilizado para de
 2. [Big O Notation](/documents/BigONotation.md)
 3. [Colecciones](/documents/Colecciones.md)
 4. [Entrada de datos. Lectura de datos por teclado en Java. Scanner y BufferedReader](/documents/EntradasDeDatos.md)
+5. [Excepciones](/documents/Exceptions.md)
+    - a. [¿Qué son las excepciones en Java?](/documents/Exceptions.md#qué-son-las-excepciones-en-java)
+    - b. [Tipos de excepciones en Java](/documents/Exceptions.md#tipos-de-excepciones-en-java)
+    - c. [Control de excepciones en Java](/documents/Exceptions.md#control-de-excepciones-en-java)
+    - d. [Creación de excepciones personalizadas en Java](/documents/Exceptions.md#creación-de-excepciones-personalizadas-en-java)
+
 5. [Interfaces Funcionales](/documents/InterfacesFuncionales.md)
 6. [API Optional](/documents/Optional.md)
 7. [API Streams](/documents/Streams.md)
