@@ -370,6 +370,16 @@ De esta manera, las excepciones se convierten en una forma de comunicación entr
 En resumen, las excepciones no sólo son una herramienta útil para manejar errores y situaciones inesperadas en el programa, sino también pueden ser utilizadas como una forma de enviar mensajes entre objetos en el programa.
 
 ### El uso de las excepciones en la programación orientada a objetos
+
+Las excepciones son una herramienta importante en la programación orientada a objetos para manejar errores y situaciones excepcionales. En lugar de simplemente imprimir un mensaje de error o dejar que el programa se bloquee, las excepciones permiten manejar los errores de una manera más estructurada y controlada.
+
+En Java, las excepciones son objetos que se crean cuando ocurre un error o una situación excepcional. Pueden ser lanzadas por un método y capturadas por otro método que se encargue de manejar el error. Esto permite que el código que detecta el error esté separado del código que maneja el error.
+
+Las excepciones en Java se dividen en dos tipos: las excepciones comprobadas y las excepciones no comprobadas. Las excepciones comprobadas deben ser manejadas explícitamente en el código, ya sea mediante la declaración de la excepción en la firma del método o mediante el manejo de la excepción con un bloque try-catch. Las excepciones no comprobadas, por otro lado, no necesitan ser manejadas explícitamente en el código, aunque todavía pueden ser capturadas y manejadas si se desea.
+
+Las excepciones se pueden utilizar para enviar mensajes entre objetos en una aplicación orientada a objetos. Por ejemplo, si un objeto necesita comunicarse con otro objeto para obtener información o realizar una tarea, puede lanzar una excepción que el otro objeto captura y maneja. Esto permite que el objeto que lanza la excepción se comunique con el objeto que la maneja, sin tener que conocer los detalles internos del objeto que maneja la excepción.
+
+En resumen, las excepciones son una herramienta importante en la programación orientada a objetos para manejar errores y situaciones excepcionales de una manera estructurada y controlada. También se pueden utilizar para enviar mensajes entre objetos en una aplicación orientada a objetos.
 ### ¿Cómo usar las excepciones para hacer que un objeto informe a otro objeto de un problema?
 ### ¿Cómo las excepciones pueden ayudar a hacer que un programa sea más robusto?
 
@@ -379,4 +389,21 @@ En resumen, las excepciones no sólo son una herramienta útil para manejar erro
 ### ¿Cómo evitar que una excepción detenga la ejecución de un programa?
 ### ¿Cómo lograr un código más legible al usar excepciones en Java?
 
-## Preguntas de entrevista de trabajo {#preguntas-de-entrevista-de-trabajo}
+## Preguntas de entrevista de trabajo
+
+- ¿Qué es una excepción en Java?
+En Java, la excepción es un objeto. Se crean excepciones cuando se presentan situaciones anormales en nuestro
+programa. Las excepciones pueden ser creadas por JVM o por nuestro código de aplicación. Todas las clases de excepción están definidas en java.lang. En otras palabras, podemos decir Excepción como error de tiempo de ejecución
+
+- Indique algunas situaciones en las que pueden surgir excepciones en Java.
+1. Acceder a un elemento que no existe en la matriz.
+2. Conversión no válida de número a cadena y de cadena a número. (Excepción de formato de número)
+3. Casting de clase no válido (Excepción de lanzamiento de clase)
+4. Intentando crear un objeto para la interfaz o la clase abstracta (Excepción de creación de instancias)
+
+- ¿Qué es el manejo de excepciones en Java?
+El manejo de excepciones en Java es un mecanismo que permite controlar y responder a los errores que ocurren durante la ejecución de un programa. Una excepción es un evento o situación anormal que interrumpe el flujo normal del programa. Java proporciona una estructura llamada bloque **try-catch** para capturar y manejar las excepciones. También se puede usar un bloque **finally** para limpiar los recursos o ejecutar código independientemente de si se produce o no una excepción.
+
+- ¿Qué es un error en Java?
+
+En Java, un error es un tipo de excepción que se produce en tiempo de ejecución y que generalmente indica que algo muy grave ha sucedido en el sistema o en la aplicación y que no puede ser manejado por el programa. Los errores son situaciones anormales y no recuperables que hacen que el programa se detenga.
