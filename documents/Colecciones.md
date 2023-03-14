@@ -320,41 +320,34 @@ En Java existen tres conceptos relacionados con la manipulación de colecciones:
 La interfaz de colección en Java es una interfaz de programación que define los métodos que se pueden utilizar para trabajar con una colección de objetos. Esta interfaz se encuentra en el paquete java.util y se utiliza para proporcionar un conjunto genérico de métodos que se pueden utilizar para manejar cualquier tipo de colección de objetos.
 
 La interfaz de colección define los siguientes métodos principales:
-
-    - int size(): Devuelve el número de elementos en la colección.
-    - boolean isEmpty(): Devuelve true si la colección está vacía, false en caso contrario.
-    - boolean contains(Object obj): Devuelve true si la colección contiene el objeto especificado, false en caso contrario.
-    - Iterator<E> iterator(): Devuelve un iterador para recorrer la colección.
-    - Object[] toArray(): Devuelve un arreglo que contiene todos los elementos de la colección.
-    - boolean add(E obj): Agrega el objeto especificado a la colección.
-    - boolean remove(Object obj): Elimina el objeto especificado de la colección.
-    - boolean containsAll(Collection<?> c): Devuelve true si la colección contiene todos los elementos de la colección especificada, false en caso contrario.
-    - boolean addAll(Collection<? extends E> c): Agrega todos los elementos de la colección especificada a la colección.
-    -boolean removeAll(Collection<?> c): Elimina todos los elementos de la colección que se encuentran en la colección especificada.
-    - boolean retainAll(Collection<?> c): Retiene solo los elementos de la colección que se encuentran en la colección especificada.
-    - void clear(): Elimina todos los elementos de la colección.
+* int size(): Devuelve el número de elementos en la colección.
+* boolean isEmpty(): Devuelve true si la colección está vacía, false en caso contrario.
+* boolean contains(Object obj): Devuelve true si la colección contiene el objeto especificado, false en caso contrario.
+* Iterator<E> iterator(): Devuelve un iterador para recorrer la colección.
+* Object[] toArray(): Devuelve un arreglo que contiene todos los elementos de la colección.
+* boolean add(E obj): Agrega el objeto especificado a la colección.
+* boolean remove(Object obj): Elimina el objeto especificado de la colección.
+* boolean containsAll(Collection<?> c): Devuelve true si la colección contiene todos los elementos de la colección especificada, false en caso contrario.
+* boolean addAll(Collection<? extends E> c): Agrega todos los elementos de la colección especificada a la colección.
+* boolean removeAll(Collection<?> c): Elimina todos los elementos de la colección que se encuentran en la colección especificada.
+* boolean retainAll(Collection<?> c): Retiene solo los elementos de la colección que se encuentran en la colección especificada.
+* void clear(): Elimina todos los elementos de la colección.
 
 La interfaz de colección también proporciona los métodos por defecto stream(), parallelStream() y spliterator() que permiten la creación de flujos y fragmentación de datos de la colección.
 
 - ¿Diferencia entre Array y ArrayList?
 
-+----------------+---------------------+-------------------------------------+
-|                |       Array         |              ArrayList              |
-+----------------+---------------------+-------------------------------------+
-| Tipo de datos  |  Puede contener     | Puede contener cualquier objeto     |
-|                |  cualquier tipo de  | o primitivo                          |
-|                |  datos primitivos   |                                     |
-+----------------+---------------------+-------------------------------------+
-| Tamaño         | Fijo                | Dinámico, se puede ajustar durante   |
-|                |                     | la ejecución                         |
-+----------------+---------------------+-------------------------------------+
-| Uso de memoria | Más eficiente       | Menos eficiente                      |
-|                |                     |                                     |
-+----------------+---------------------+-------------------------------------+
-| Métodos útiles | length,             | add, remove, clear, contains,       |
-|                | sort, binarySearch  | indexOf, size, toArray, iterator,   |
-|                |                     | etc.                                |
-+----------------+---------------------+-------------------------------------+
+|       Array         |              ArrayList              |
+|:-------------------:|:-----------------------------------:|
+| Tamaño fijo         | Tamaño dinámico                     |
+| Los elementos se pueden acceder directamente mediante un índice | Los elementos se pueden acceder mediante un iterador |
+| No se puede eliminar o agregar elementos | Se puede eliminar o agregar elementos |
+| Debe especificar el tamaño del array al crearlo | No es necesario especificar el tamaño del array al crearlo |
+| No es seguro para subprocesos | Es seguro para subprocesos |
+| Sintaxis: Tipo[] nombre = new Tipo[tamaño] | Sintaxis: ArrayList<Tipo> nombre = new ArrayList<Tipo>() |
+| No es compatible con la interfaz de colección | Es compatible con la interfaz de colección |
+| Los elementos tienen que ser del mismo tipo | Los elementos pueden ser de diferentes tipos |
+
 
 - ¿Qué es un vector?
 
