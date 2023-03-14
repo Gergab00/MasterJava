@@ -218,6 +218,48 @@ System.out.println(names); // Prints "[Jane, Jim, John]"
 
 En este ejemplo, se crea una lista de nombres utilizando la clase ArrayList. Luego, se ordena la lista utilizando el método **`sort()`** de la clase Collections. El método **`sort()`** ordena la lista en orden alfabético.
 
+## Colecciones Inmutables
+
+Las colecciones inmutables en Java son aquellas que no pueden ser modificadas después de su creación. En otras palabras, una vez que se crean, no se pueden agregar, eliminar o modificar elementos en ellas. En lugar de modificar la colección existente, se crea una nueva colección con los cambios requeridos.
+
+La clase Collections ofrece métodos para crear colecciones inmutables a partir de colecciones existentes. Por ejemplo, el método unmodifiableList() crea una lista inmutable a partir de una lista existente. De manera similar, existen métodos para crear conjuntos inmutables (unmodifiableSet()) y mapas inmutables (unmodifiableMap()).
+
+Las colecciones inmutables tienen varias ventajas. En primer lugar, son más seguras en entornos multi-hilo, ya que no pueden ser modificadas concurrentemente por varios hilos. En segundo lugar, son útiles para evitar efectos secundarios no deseados en los métodos que reciben colecciones como argumentos. Si una colección es inmutable, se garantiza que no se modificará durante la ejecución del método, lo que puede hacer que el código sea más predecible y menos propenso a errores.
+
+Otra ventaja de las colecciones inmutables es que son más eficientes en términos de memoria. Dado que no es necesario realizar una copia de la colección original cada vez que se modifica, se pueden ahorrar recursos y mejorar el rendimiento en situaciones en las que la colección no necesita ser modificada.
+
+Un ejemplo de una colección inmutable es la siguiente:
+
+```java
+import java.util.Collections;
+import java.util.List;
+
+public class EjemploColeccionInmutable {
+  public static void main(String[] args) {
+  
+    // Creamos una lista mutable
+    List<String> listaMutable = new ArrayList<>();
+    listaMutable.add("uno");
+    listaMutable.add("dos");
+    listaMutable.add("tres");
+
+    // Creamos una lista inmutable a partir de la lista mutable
+    List<String> listaInmutable = Collections.unmodifiableList(listaMutable);
+
+    // Tratamos de agregar un nuevo elemento a la lista inmutable
+    try {
+      listaInmutable.add("cuatro");
+    } catch (UnsupportedOperationException e) {
+      System.out.println("No se puede agregar elementos a una colección inmutable");
+    }
+  }
+}
+```
+
+En este ejemplo, se crea una lista mutable utilizando la clase ArrayList. Luego, se crea una lista inmutable a partir de la lista mutable utilizando el método **`unmodifiableList()`** de la clase Collections. Finalmente, se intenta agregar un nuevo elemento a la lista inmutable. Como la lista inmutable no se puede modificar, se lanza una excepción **`UnsupportedOperationException`**.
+
+En resumen, las colecciones inmutables son útiles para evitar efectos secundarios no deseados en los métodos que reciben colecciones como argumentos. Además, son más seguras en entornos multi-hilo y más eficientes en términos de memoria.
+
 ## Resumen
 
 La interfaz **`Collection`** representa una colección de objetos. Las clases que implementan la interfaz **`Collection`** incluyen **`ArrayList`**, **`LinkedList`**, **`HashSet`**, **`TreeSet`**, **`HashMap`** y **`TreeMap`**. Puedes iterar sobre una colección utilizando un bucle for-each. Puedes filtrar una colección utilizando un bucle for-each y una expresión lambda. Puedes ordenar una colección utilizando el método **`sort()`** de la clase Collections.
@@ -247,6 +289,76 @@ Hay algunas consideraciones y buenas prácticas que debes tener en cuenta al tra
 5. Evita la manipulación directa de la colección subyacente: Es importante evitar la manipulación directa de la colección subyacente al trabajar con colecciones, ya que puede provocar errores en tiempo de ejecución. En su lugar, es mejor utilizar las operaciones de la interfaz de colección para manipular la colección de manera segura.
 
 Estas son algunas de las buenas prácticas que debes tener en cuenta al trabajar con colecciones en Java. Espero que te resulten útiles.
+
+## Preguntas de entrevista de trabajo
+
+- ¿Qué es el marco de colecciones?
+
+El marco de colecciones (Collection Framework) es una arquitectura unificada para representar y manipular grupos de objetos. Fue introducido en Java 1.2 y se compone de una serie de interfaces, clases y algoritmos que permiten manejar colecciones de objetos de manera eficiente.
+
+El framework proporciona una serie de interfaces para diferentes tipos de colecciones, como List, Set y Map, así como varias implementaciones concretas de estas interfaces, como ArrayList, HashSet y TreeMap, entre otros.
+
+- ¿Qué es la colección?
+
+Las colecciones son una estructura de datos muy útil que se utilizan para almacenar y manipular grupos de objetos.
+
+Una colección puede contener objetos de cualquier clase, incluidos tipos primitivos, y se puede acceder a los elementos en la colección mediante índices o iteradores. Las colecciones en Java proporcionan una variedad de interfaces y clases, cada una de las cuales tiene sus propias características y métodos.
+
+Algunas de las clases más comunes de la colección en Java son: List, Set, Map, Queue y Stack.
+
+- ¿Diferencia entre colección, Colección y Colecciones en java?
+
+En Java existen tres conceptos relacionados con la manipulación de colecciones:
+
+1. **Colección (Collection):** es una interfaz que forma parte del Framework de colecciones de Java, la cual define las operaciones básicas que se pueden realizar sobre una colección de elementos, tales como agregar, eliminar, obtener, buscar y recorrer elementos.
+
+2. **colección (collection):** hace referencia a cualquier conjunto de elementos que se agrupan juntos, sin importar la forma en que se implementen o se manipulen.
+
+3. **Colecciones (Collections):** es una clase utilitaria de Java que proporciona una serie de métodos estáticos para trabajar con objetos que implementan la interfaz Collection. Esta clase provee, entre otras cosas, métodos para ordenar, buscar, filtrar y transformar elementos de una colección.
+
+- ¿Explica todo sobre la interfaz de colección en Java?
+La interfaz de colección en Java es una interfaz de programación que define los métodos que se pueden utilizar para trabajar con una colección de objetos. Esta interfaz se encuentra en el paquete java.util y se utiliza para proporcionar un conjunto genérico de métodos que se pueden utilizar para manejar cualquier tipo de colección de objetos.
+
+La interfaz de colección define los siguientes métodos principales:
+
+    - int size(): Devuelve el número de elementos en la colección.
+    - boolean isEmpty(): Devuelve true si la colección está vacía, false en caso contrario.
+    - boolean contains(Object obj): Devuelve true si la colección contiene el objeto especificado, false en caso contrario.
+    - Iterator<E> iterator(): Devuelve un iterador para recorrer la colección.
+    - Object[] toArray(): Devuelve un arreglo que contiene todos los elementos de la colección.
+    - boolean add(E obj): Agrega el objeto especificado a la colección.
+    - boolean remove(Object obj): Elimina el objeto especificado de la colección.
+    - boolean containsAll(Collection<?> c): Devuelve true si la colección contiene todos los elementos de la colección especificada, false en caso contrario.
+    - boolean addAll(Collection<? extends E> c): Agrega todos los elementos de la colección especificada a la colección.
+    -boolean removeAll(Collection<?> c): Elimina todos los elementos de la colección que se encuentran en la colección especificada.
+    - boolean retainAll(Collection<?> c): Retiene solo los elementos de la colección que se encuentran en la colección especificada.
+    - void clear(): Elimina todos los elementos de la colección.
+
+La interfaz de colección también proporciona los métodos por defecto stream(), parallelStream() y spliterator() que permiten la creación de flujos y fragmentación de datos de la colección.
+
+- ¿Diferencia entre Array y ArrayList?
+
++----------------+---------------------+-------------------------------------+
+|                |       Array         |              ArrayList              |
++----------------+---------------------+-------------------------------------+
+| Tipo de datos  |  Puede contener     | Puede contener cualquier objeto     |
+|                |  cualquier tipo de  | o primitivo                          |
+|                |  datos primitivos   |                                     |
++----------------+---------------------+-------------------------------------+
+| Tamaño         | Fijo                | Dinámico, se puede ajustar durante   |
+|                |                     | la ejecución                         |
++----------------+---------------------+-------------------------------------+
+| Uso de memoria | Más eficiente       | Menos eficiente                      |
+|                |                     |                                     |
++----------------+---------------------+-------------------------------------+
+| Métodos útiles | length,             | add, remove, clear, contains,       |
+|                | sort, binarySearch  | indexOf, size, toArray, iterator,   |
+|                |                     | etc.                                |
++----------------+---------------------+-------------------------------------+
+
+- ¿Qué es un vector?
+
+En Java, un `Vector` es una clase que se utiliza para crear matrices dinámicas (también conocidas como arrays dinámicos). Estas matrices tienen un tamaño inicial y pueden crecer o disminuir automáticamente según sea necesario. La clase `Vector` es similar a la clase `ArrayList`, pero a diferencia de esta última, los métodos de la clase `Vector` son sincronizados, lo que significa que solo un hilo puede acceder a ellos en un momento dado. Esto los hace más adecuados para aplicaciones en las que se requiere acceso seguro a los datos por parte de múltiples subprocesos. Sin embargo, los vectores pueden ser menos eficientes que los arrays estándar en términos de uso de memoria y velocidad de acceso a los elementos.
 
 ## Material de apoyo
 
